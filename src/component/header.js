@@ -19,10 +19,9 @@ export default function ProjectHeader() {
                     Select Wallet
                 </Button> */}
                 <div style={{ fontFamily: 'font2', fontSize: '3.5rem', margin: '0px 20%' }}>
-                    Mikuko Bay
+                    Space Blasterz
                 </div>
-                <Button type="primary" ghost className='mybtn'>
-                    Vials Power
+                <Button type="primary" ghost className='mybtn' style={{visibility: "hidden"}}>
                 </Button>
             </div>
         </div>

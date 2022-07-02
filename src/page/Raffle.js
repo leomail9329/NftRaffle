@@ -2,9 +2,15 @@ import * as React from 'react';
 import nft1 from '../assets/img/1.png'
 import nft2 from '../assets/img/2.png'
 import nft3 from '../assets/img/3.png'
-import nft4 from '../assets/img/4.png'
-import nft5 from '../assets/img/5.png'
-import nft6 from '../assets/img/6.png'
+
+
+import vNft1 from "../assets/img/nft1.mp4";
+import vNft2 from "../assets/img/nft2.mp4";
+import vNft3 from "../assets/img/nft3.mp4";
+
+
+
+
 import fPoint from '../assets/img/fPoint.png'
 import sPoint from '../assets/img/sPoint.png'
 import bHeart from '../assets/img/bHeart.png'
@@ -98,7 +104,8 @@ export default function Raffle() {
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft1} style={{ width: '100%' }} />}
+                    // cover={<img alt="example" src={nft1} style={{ width: '100%' }} />}
+                    cover={<video src={vNft1} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
                     <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
@@ -149,7 +156,8 @@ export default function Raffle() {
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft2} style={{ width: '100%' }} />}
+                    // cover={<img alt="example" src={nft2} style={{ width: '100%' }} />}
+                    cover={<video src={vNft2} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
                     <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
@@ -200,160 +208,8 @@ export default function Raffle() {
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft3} style={{ width: '100%' }} />}
-                >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
-                            <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
-                                <img src={sPoint} style={{}} />
-                                <span>Ends in 2d 4h 34m</span>
-                            </div>
-                            <div style={{ flex: '1', display: 'flex', justifyContent: 'flex-end' }}>
-                                <div style={{ background: 'white', borderRadius: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50px', height: '50px' }}>
-                                    <img src={rHeart} style={{ width: '25px', height: '25px' }} />
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>Lorem Ipsum</span>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '15px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>
-                                Lorem Ipsum dollar commet,
-                                Lorem Ipsum dollar Lorem Ipsum dollar Lorem Ipsum dollar commet,
-                            </span>
-                        </div>
-                        <div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={winner} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>No of Winners</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 7</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={wallet} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>Ticket Sold</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 256</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <button className='btn-view'>
-                                    View Winners
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </Card>
-                <Card
-                    onClick={NFTDetail}
-                    className='animate__animated animate__zoomInUp'
-                    grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft4} style={{ width: '100%' }} />}
-                >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
-                            <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
-                                <img src={sPoint} style={{}} />
-                                <span>Ends in 2d 4h 34m</span>
-                            </div>
-                            <div style={{ flex: '1', display: 'flex', justifyContent: 'flex-end' }}>
-                                <div style={{ background: 'white', borderRadius: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50px', height: '50px' }}>
-                                    <img src={rHeart} style={{ width: '25px', height: '25px' }} />
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>Lorem Ipsum</span>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '15px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>
-                                Lorem Ipsum dollar commet,
-                                Lorem Ipsum dollar Lorem Ipsum dollar Lorem Ipsum dollar commet,
-                            </span>
-                        </div>
-                        <div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={winner} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>No of Winners</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 7</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={wallet} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>Ticket Sold</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 256</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <button className='btn-view'>
-                                    View Winners
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </Card>
-                <Card
-                    onClick={NFTDetail}
-                    className='animate__animated animate__zoomInUp'
-                    grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft5} style={{ width: '100%' }} />}
-                >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
-                            <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
-                                <img src={sPoint} style={{}} />
-                                <span>Ends in 2d 4h 34m</span>
-                            </div>
-                            <div style={{ flex: '1', display: 'flex', justifyContent: 'flex-end' }}>
-                                <div style={{ background: 'white', borderRadius: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '50px', height: '50px' }}>
-                                    <img src={rHeart} style={{ width: '25px', height: '25px' }} />
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>Lorem Ipsum</span>
-                        </div>
-                        <div>
-                            <span style={{ fontSize: '15px', fontFamily: 'font1', color: '#413253', textAlign: 'left' }}>
-                                Lorem Ipsum dollar commet,
-                                Lorem Ipsum dollar Lorem Ipsum dollar Lorem Ipsum dollar commet,
-                            </span>
-                        </div>
-                        <div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={winner} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>No of Winners</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 7</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <img src={wallet} style={{ width: '40px' }} />
-                                <div style={{ padding: '0px 15px' }}>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>Ticket Sold</span>
-                                    <span style={{ fontSize: '20px', fontFamily: 'font1', color: '#413253' }}>: 256</span>
-                                </div>
-                            </div>
-                            <div style={{ padding: '0px 10px', display: 'flex', alignItems: 'center' }}>
-                                <button className='btn-view'>
-                                    View Winners
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </Card>
-                <Card
-                    onClick={NFTDetail}
-                    className='animate__animated animate__zoomInUp'
-                    grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    cover={<img alt="example" src={nft6} style={{ width: '100%' }} />}
+                    // cover={<img alt="example" src={nft3} style={{ width: '100%' }} />}
+                    cover={<video src={vNft3} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
                     <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
