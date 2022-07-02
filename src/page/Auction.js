@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { Provider, Program } from "@project-serum/anchor";
+// import { Provider, Program } from "@project-serum/anchor";
 import nft1 from '../assets/img/1.png'
 import nft2 from '../assets/img/2.png'
 import nft3 from '../assets/img/3.png'
@@ -27,10 +27,10 @@ export default function Auction() {
     const { publicKey, signTransaction } = useWallet();
     const wallet = useWallet();
 
-    const provider = new Provider(
-        connection, wallet, "processed",
-    );
-    var program = new Program(idl, idl.metadata.address, provider);
+    // const provider = new Provider(
+    //     connection, wallet, "processed",
+    // );
+    // var program = new Program(idl, idl.metadata.address, provider);
 
     const navigate = useNavigate();
 
@@ -44,12 +44,12 @@ export default function Auction() {
 
     useEffect(() => {
         console.log('started')
-        const fn = async () => {
-            const auctions = await program.account.auction.all();
-            console.log(auctions);
-        }
+        // const fn = async () => {
+        //     const auctions = await program.account.auction.all();
+        //     console.log(auctions);
+        // }
 
-        fn();
+        // fn();
 
         return () => {
 
