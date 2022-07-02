@@ -6,10 +6,26 @@ import congrat from '../assets/img/congrat.png'
 import fPoint from '../assets/img/fPoint.png'
 import 'animate.css';
 
+import vNft1 from "../assets/img/nft1.mp4";
+import vNft2 from "../assets/img/nft2.mp4";
+import vNft3 from "../assets/img/nft3.mp4";
+
+
+
+
 import { Button, Card } from 'antd'
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 const { Meta } = Card;
+const nfts = [vNft1, vNft2, vNft3];
 
 export default function NftDetail() {
+
+    const params = useParams();
+
+    useEffect(()=>{
+        console.log("id: ", params.id);
+    });
 
     return (
         <div style={{ marginTop: '100px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
@@ -19,7 +35,8 @@ export default function NftDetail() {
             >
 
                 <div style={{ marginRight: '40px', width: '400px' }}>
-                    <img src={defaultNft} style={{ width: '100%' }} />
+                    {/* <img src={defaultNft} style={{ width: '100%' }} /> */}
+                    <video src={nfts[params.id - 1]} style={{ width: '100%', borderRadius:"20px"}} autoPlay loop/>
                     <div className='nftDetaildescription'>
                         <span>Description</span>
                     </div>
@@ -37,7 +54,7 @@ export default function NftDetail() {
                 </div>
                 <div style={{ width: '100%' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <span style={{ fontSize: '30px', fontFamily: 'font1', marginRight: '20px' }}>Yoku Corp</span>
+                        <span style={{ fontSize: '30px', fontFamily: 'font1', marginRight: '20px' }}>Space Blasterz</span>
                         <img src={discord} style={{ width: '40px', marginLeft: '20px', borderRadius: '40px' }} />
                         <img src={twitter} style={{ width: '40px', margin: '0px 20px', borderRadius: '40px' }} />
                         <div style={{ marginLeft: '20px', background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
@@ -48,7 +65,7 @@ export default function NftDetail() {
                     <div style={{ display: 'flex', alignItems: 'center', margin: '20px 0px' }}>
                         <div className='nftDetailDiv' style={{ marginRight: '30px' }}>
                             <span style={{ flex: '1' }}>Project</span>
-                            <span>Yoku Corp</span>
+                            <span>Space Blasterz</span>
                         </div>
                         <div className='nftDetailDiv' style={{ marginRight: '30px' }}>
                             <span style={{ flex: '1' }}>Collection</span>

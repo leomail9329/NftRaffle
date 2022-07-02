@@ -58,7 +58,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Raffle />} />
                 <Route path="/auction" element={<Auction />} />
-                <Route path="/detail" element={<NftDetail />} />
+                <Route path="/detail/:id" element={<NftDetail />} />
                 {/* <Route path="/admin" element={<AUpcoming />} /> */}
               </Routes>
             </Router>

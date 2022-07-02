@@ -29,8 +29,8 @@ export default function Raffle() {
 
     const navigate = useNavigate();
 
-    const NFTDetail = () => {
-        navigate('/detail')
+    const NFTDetail = (index) => {
+        navigate('/detail/' + index)
     }
 
     const gotoAuction = () => {
@@ -100,7 +100,7 @@ export default function Raffle() {
 
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 0px', width: '80%', flexWrap: 'wrap' }}>
                 <Card
-                    onClick={NFTDetail}
+                    onClick={()=>{NFTDetail(1)}}
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
@@ -152,7 +152,7 @@ export default function Raffle() {
                     </div>
                 </Card>
                 <Card
-                    onClick={NFTDetail}
+                    onClick={()=>{NFTDetail(2)}}
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
@@ -204,7 +204,7 @@ export default function Raffle() {
                     </div>
                 </Card>
                 <Card
-                    onClick={NFTDetail}
+                    onClick={()=>{NFTDetail(3)}}
                     className='animate__animated animate__zoomInUp'
                     grid
                     style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
