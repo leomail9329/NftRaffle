@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Button } from 'antd'
-import {
-    WalletModalProvider,
-    WalletDisconnectButton,
-    WalletMultiButton
-} from '@solana/wallet-adapter-react-ui';
+// import {
+//     WalletModalProvider,
+//     WalletDisconnectButton,
+//     WalletMultiButton
+// } from '@solana/wallet-adapter-react-ui';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { NotificationManager } from 'react-notifications';
@@ -16,14 +16,18 @@ export default function ProjectHeader() {
     var state = useSelector((state)=>state);
 
     const connectWallet = async () => {
-        console.log("connect wallet");
-        if (window.ethereum) {
-            await window.ethereum.enable();
-            dispatch({
-                type: "CONNECT_WALLET"
-            });
+
+        if (state && state.account) {
+            dispatch({type: "DISCONNECT_WALLET"});
         } else {
-            NotificationManager.error("Please install metamask!", "Error", 2000);
+            if (window.ethereum) {
+                await window.ethereum.enable();
+                dispatch({
+                    type: "CONNECT_WALLET"
+                });
+            } else {
+                NotificationManager.error("Please install metamask!", "Error", 2000);
+            }
         }
     }
 

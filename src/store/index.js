@@ -9,9 +9,11 @@ const reducer = (state, action) => {
         web3.eth.getAccounts((err, accounts) => {
             console.log("connected wallet: ", accounts[0]);
             store.dispatch({type: "RETURN_DATA", payload: {account: accounts[0]}});
-            // return {...state, account: accounts[0]};
         })
-    } else if (action.type === "RETURN_DATA") {
+    } else if (action.type === "DISCONNECT_WALLET") { 
+        return {...state, account: ""};
+    }
+    else if (action.type === "RETURN_DATA") {
         return Object.assign({},state, action.payload);
     }
 }
