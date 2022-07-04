@@ -88,7 +88,7 @@ export default function NftDetail() {
                             <span style={{ color: '#a900ff', fontSize: '15px' }}>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
                         </div>
                     </div>
-                    <div className='nftDetailDivEnd' style={{ margin: '40px 0px' }}>
+                    {/* <div className='nftDetailDivEnd' style={{ margin: '40px 0px' }}>
                         <span style={{ textAlign: 'center', color: 'black' }}>Bid History</span>
                         <div style={{ display: 'flex' }}>
                             <div style={{ flex: '4', display: 'grid', fontSize: '15px' }}>
@@ -125,7 +125,7 @@ export default function NftDetail() {
                                 <span>$50</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

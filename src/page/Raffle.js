@@ -39,7 +39,7 @@ export default function Raffle() {
 
     return (
         <div style={{ marginTop: '100px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ background: 'white', borderRadius: '70px', padding: '0px', display: 'flex', alignItems: 'center' }}>
                     <button className='btn-grad'>
                         RAFFLE
@@ -48,7 +48,7 @@ export default function Raffle() {
                         AUCTIONS
                     </span>
                 </div>
-            </div>
+            </div> */}
             {/* <div className='nftContent'>
                 <div className='nftName'>
                     <span>Winner of Yoku Corp</span>
