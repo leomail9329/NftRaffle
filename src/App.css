@@ -17,6 +17,10 @@ body {
     background-repeat: no-repeat;
 }
 
+html, body {
+    height: unset !important;
+}
+
 .mybtn {
     background: transparent;
     font-family: font1;

@@ -1,0 +1,35 @@
+.detail-content {
+    display: flex;
+    margin: 20px;
+    width: 80%;
+}
+
+.detail-item-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.detail-item + .detail-item {
+    margin-left: 30px;
+}
+
+.nftDetailDiv .auction {
+    padding: 50px;
+}
+
+@media (max-width: 800px) {
+   .detail-content {
+        flex-direction: column;
+   }
+   .detail-item-container {
+        flex-direction: column;
+   }
+   .detail-item + .detail-item {
+        margin-left: 0px;
+   }
+   .nftDetailDiv .auction {
+        padding: 20px;
+    }
+
+}

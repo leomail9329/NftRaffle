@@ -1,14 +1,8 @@
 import * as React from 'react';
-import nft1 from '../assets/img/1.png'
-import nft2 from '../assets/img/2.png'
-import nft3 from '../assets/img/3.png'
-
 
 import vNft1 from "../assets/img/nft1.mp4";
 import vNft2 from "../assets/img/nft2.mp4";
 import vNft3 from "../assets/img/nft3.mp4";
-
-
 
 
 import fPoint from '../assets/img/fPoint.png'
@@ -18,6 +12,7 @@ import rHeart from '../assets/img/rHeart.png'
 import winner from '../assets/img/winner.png'
 import wallet from '../assets/img/wallet.png'
 import 'animate.css';
+import './raffle.css';
 
 import { Button, Card } from 'antd'
 import { useNavigate } from 'react-router-dom';
@@ -39,66 +34,8 @@ export default function Raffle() {
 
     return (
         <div style={{ marginTop: '100px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ background: 'white', borderRadius: '70px', padding: '0px', display: 'flex', alignItems: 'center' }}>
-                    <button className='btn-grad'>
-                        RAFFLE
-                    </button>
-                    <span onClick={gotoAuction} style={{ fontSize: '20px', fontFamily: 'font1', color: 'grey', margin: '0px 50px 0px 50px', cursor: 'pointer' }}>
-                        AUCTIONS
-                    </span>
-                </div>
-            </div> */}
-            {/* <div className='nftContent'>
-                <div className='nftName'>
-                    <span>Winner of Yoku Corp</span>
-                </div>
-                <div style={{ display: 'flex', margin: '20px' }}>
-                    <div style={{ marginRight: '20px' }}>
-                        <img src={defaultNft} style={{ width: '350px', height: '350px' }} />
-                    </div>
-                    <div style={{ width: '100%' }}>
-                        <div className='nftDiv'>
-                            <span style={{ flex: '1' }}>Total Winners</span>
-                            <span>04</span>
-                        </div>
-                        <div className='nftDiv'>
-                            <span style={{ flex: '1' }}>Total Entries</span>
-                            <span>90</span>
-                        </div>
-                        <div className='nftDiv'>
-                            <span style={{ flex: '1' }}>My Entries</span>
-                            <span>01</span>
-                        </div>
-                        <div className='nftDivEnd'>
-                            <div style={{ flex: '1', display: 'grid' }}>
-                                <span style={{ fontSize: '20px', textDecoration: 'underline' }}>Wallet(s)</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                                <span>0x8B6e132456BEA45954befF3488B4c7e245128b7d</span>
-                            </div>
-                            <div style={{ display: 'grid' }}>
-                                <span style={{ fontSize: '20px', textDecoration: 'underline' }}>Entries</span>
-                                <span>02</span>
-                                <span>01</span>
-                                <span>03</span>
-                                <span>05</span>
-                                <span>02</span>
-                                <span>01</span>
-                                <span>03</span>
-                                <span>05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 0px', width: '80%', flexWrap: 'wrap' }}>
+           
+            <div className='card-content'>
                 <Card
                     onClick={()=>{NFTDetail(1)}}
                     className='animate__animated animate__zoomInUp'
