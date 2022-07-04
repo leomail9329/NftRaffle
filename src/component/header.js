@@ -8,6 +8,7 @@ import { Button } from 'antd'
 
 import { useDispatch, useSelector } from 'react-redux';
 import { NotificationManager } from 'react-notifications';
+import "./header.css";
 
 
 export default function ProjectHeader() {
@@ -33,20 +34,26 @@ export default function ProjectHeader() {
 
     return (
         <div style={{ background: 'transparent', marginTop: '50px' }}>
-            <div className="site-button-ghost-wrapper" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="site-button-ghost-wrapper" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , padding:"0px 10%"}}>
                 {/* <WalletModalProvider >
                     <WalletModalProvider>
                         <WalletMultiButton />
                     </WalletModalProvider>
                 </WalletModalProvider> */}
 
-                <Button type="primary" ghost className='mybtn' onClick={connectWallet}>                    
+                <Button type="primary" ghost className='mybtn show_pc' onClick={connectWallet}>                    
                     {state && state.account? state.account.slice(0,6) + "..." +state.account.slice(38): "Connect Wallet"}
                 </Button>
-                <div style={{ fontFamily: 'font2', fontSize: '3.5rem', margin: '0px 20%' }}>
+                <div className='header_title' >
                     Space Blasterz
                 </div>
-                <Button type="primary" ghost className='mybtn' style={{visibility: "hidden"}}>
+                <Button type="primary" ghost className='mybtn show_pc' style={{visibility: "hidden"}}>
+                    not visibility
+                </Button>
+            </div>
+            <div className='show_mobile' >
+                <Button type="primary" ghost className='mybtn' onClick={connectWallet}>                    
+                    {state && state.account? state.account.slice(0,6) + "..." +state.account.slice(38): "Connect Wallet"}
                 </Button>
             </div>
         </div>

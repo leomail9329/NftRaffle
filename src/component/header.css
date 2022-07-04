@@ -1,0 +1,32 @@
+
+.show_pc {
+    display: block;
+}
+.show_mobile {
+    display: none !important;
+    padding: 0px 20px;
+    justify-content: flex-end;
+}
+
+.header_title {
+    font-family: 'font2';
+    font-size: 3.5rem;
+    /* margin: 0px 20%; */
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+
+@media (max-width: 800px) {
+    .show_pc {
+        display: none !important;
+    }
+    .show_mobile {
+        display: flex !important;
+    }
+    .header_title {
+        /* margin: 0px 20px; */
+    }
+ }
