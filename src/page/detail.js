@@ -26,7 +26,7 @@ export default function NftDetail() {
         <div style={{ marginTop: '100px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             {/* <div className='animate__animated animate__zoomInUp detail-content'> */}
             <div className='detail-content'>
-                <div style={{ marginRight: '40px', width: '400px' }}>
+                <div className='nft-detail' >
                     {/* <img src={defaultNft} style={{ width: '100%' }} /> */}
                     <video src={nfts[params.id - 1]} style={{ width: '100%', borderRadius:"20px"}} autoPlay loop/>
                     <div className='nftDetaildescription'>

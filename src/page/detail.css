@@ -18,6 +18,11 @@
     padding: 50px;
 }
 
+.nft-detail {
+    margin-right: 40px;
+    width: 400px;
+}
+
 @media (max-width: 800px) {
    .detail-content {
         flex-direction: column;
@@ -30,6 +35,11 @@
    }
    .nftDetailDiv .auction {
         padding: 20px;
+    }
+    .nft-detail {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
 }
