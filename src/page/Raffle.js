@@ -40,12 +40,11 @@ export default function Raffle() {
                     onClick={()=>{NFTDetail(1)}}
                     className='animate__animated animate__zoomInUp'
                     grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    // cover={<img alt="example" src={nft1} style={{ width: '100%' }} />}
+                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '23%', maxWidth: '23%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
                     cover={<video src={vNft1} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
+                    <div style={{ borderRadius: '10px', margin: '10px 0px' , position:'relative'}}>
+                        <div style={{ display: 'flex', alignItems: 'center', position: 'absolute', width: '100%', top: '-70px', padding: '0px 20px' }}>
                             <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
                                 <img src={fPoint} style={{}} />
                                 <span>Raffle Closed</span>
@@ -92,12 +91,11 @@ export default function Raffle() {
                     onClick={()=>{NFTDetail(2)}}
                     className='animate__animated animate__zoomInUp'
                     grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    // cover={<img alt="example" src={nft2} style={{ width: '100%' }} />}
+                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '23%', maxWidth: '23%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
                     cover={<video src={vNft2} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
+                    <div style={{ borderRadius: '10px', margin: '10px 0px', position:"relative" }}>
+                        <div style={{ display: 'flex', alignItems: 'center', position: 'absolute', width: '100%', top: '-70px', padding: '0px 20px' }}>
                             <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
                                 <img src={fPoint} style={{}} />
                                 <span>Raffle Closed</span>
@@ -144,12 +142,11 @@ export default function Raffle() {
                     onClick={()=>{NFTDetail(3)}}
                     className='animate__animated animate__zoomInUp'
                     grid
-                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '27%', maxWidth: '27%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
-                    // cover={<img alt="example" src={nft3} style={{ width: '100%' }} />}
+                    style={{ margin: '20px 3%', border: '0px', padding: '10px', minWidth: '23%', maxWidth: '23%', justifyContent: 'center', display: 'grid', background: '#ffffff66', borderRadius: '30px', cursor: 'pointer' }}
                     cover={<video src={vNft3} style={{width:'100%', borderRadius:"20px"}} autoPlay loop/>}
                 >
-                    <div style={{ borderRadius: '10px', margin: '10px 0px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', position: 'fixed', width: '90%', top: '260px', padding: '0px 20px' }}>
+                    <div style={{ borderRadius: '10px', margin: '10px 0px' , position:"relative"}}>
+                        <div style={{ display: 'flex', alignItems: 'center', position: 'absolute', width: '100%', top: '-70px', padding: '0px 20px' }}>
                             <div style={{ background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
                                 <img src={sPoint} style={{}} />
                                 <span>Ends in 2d 4h 34m</span>
