@@ -45,11 +45,13 @@ export default function NftDetail() {
                     </div>
                 </div>
                 <div style={{ width: '100%' }}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <span style={{ fontSize: '30px', fontFamily: 'font1', marginRight: '20px' }}>Space Blasterz</span>
-                        <img src={discord} style={{ width: '40px', marginLeft: '20px', borderRadius: '40px' }} />
-                        <img src={twitter} style={{ width: '40px', margin: '0px 20px', borderRadius: '40px' }} />
-                        <div style={{ marginLeft: '20px', background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', flexWrap:"wrap" }}>
+                        <div>
+                            <span style={{ fontSize: '30px', fontFamily: 'font1', marginRight: '20px' }}>Space Blasterz</span>
+                            <img src={discord} style={{ width: '40px', marginLeft: '20px', borderRadius: '40px' }} />
+                            <img src={twitter} style={{ width: '40px', margin: '0px 20px', borderRadius: '40px' }} />
+                        </div>
+                        <div style={{ marginLeft: '20px', background: 'black', color: 'white', fontFamily: 'font1', padding: '3px 10px', borderRadius: '50px', marginTop:"20px" }}>
                             <img src={fPoint} style={{}} />
                             <span>Raffle Closed</span>
                         </div>
